@@ -1,0 +1,23 @@
+---
+apiVersion: v2
+appVersion: 1.0.4
+description: Webhook for Prometheus Alertmanager to listen for notifications and pushes them to Discord channel
+name: alertmanager-discord
+version: 0.1.0
+kubeVersion: '>=1.22.0-0'
+keywords:
+  - alertmanager
+  - discord
+  - alerting
+home: https://github.com/j0sh3rs/charts/tree/master/charts/library/alertmanager-discord
+icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+sources:
+  - https://github.com/rogerrum/alertmanager-discord
+  - https://hub.docker.com/r/rogerrum/alertmanager-discord
+maintainers:
+  - name: j0sh3rs
+    email: j0sh3rs@pm.me
+dependencies:
+  - name: common
+    repository: https://j0sh3rs.github.io/helm-charts/
+    version: 1.2.1

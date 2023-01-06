@@ -1,0 +1,22 @@
+---
+apiVersion: v2
+appVersion: 2.4.8-1
+description: Container for protonmail bridge to work on the network.
+name: protonmail-bridge
+version: 0.1.0
+kubeVersion: '>=1.22.0-0'
+keywords:
+  - protonmail
+  - protonmail-bridge
+home: https://github.com/j0sh3rs/charts/tree/master/charts/library/protonmail-bridge
+icon: https://raw.githubusercontent.com/ProtonMail/proton-bridge/master/icon.iconset/icon_256x256.png
+sources:
+  - https://github.com/shenxn/protonmail-bridge-docker
+  - https://hub.docker.com/r/shenxn/protonmail-bridge
+maintainers:
+  - name: j0sh3rs
+    email: j0sh3rs@pm.me
+dependencies:
+  - name: common
+    repository: https://j0sh3rs.github.io/helm-charts
+    version: 1.2.1

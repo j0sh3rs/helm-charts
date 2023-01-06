@@ -1,0 +1,19 @@
+{{/* Make sure all variables are set properly */}}
+{{- include "j0sh3rs.common.values.init" . }}
+
+{{/* Append the hardcoded settings */}}
+{{- define "blocky.hardcodedValues" -}}
+persistence:
+  blocky-config:
+    enabled: "true"
+    mountPath: "/app/config.yml"
+    subPath: "config.yml"
+    type: "custom"
+    volumeSpec:
+      configMap:
+        name: {{ printf "%v-config" (include "j0sh3rs.common.lib.chart.names.fullname" .) }}
+{{- end -}}
+{{- $_ := mergeOverwrite .Values (include "blocky.hardcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "j0sh3rs.common.loader.all" . }}
