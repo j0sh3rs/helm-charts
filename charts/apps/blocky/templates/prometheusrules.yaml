@@ -1,25 +1,25 @@
 {{- if and .Values.metrics.enabled .Values.metrics.prometheusRule.enabled }}
-{{- include "j0sh3rs.common.values.init" . -}}
+{{- include "bjw-s.common.values.init" . -}}
 ---
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:
-  name: {{ include "j0sh3rs.common.lib.chart.names.fullname" . }}
+  name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}
   labels:
-    {{- include "j0sh3rs.common.lib.metadata.allLabels" . | nindent 4 }}
+    {{- include "bjw-s.common.lib.metadata.allLabels" . | nindent 4 }}
     {{- with .Values.metrics.prometheusRule.labels }}
     {{- toYaml . | nindent 4 }}
     {{- end }}
 spec:
   groups:
-    - name: {{ include "j0sh3rs.common.lib.chart.names.fullname" . }}
+    - name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}
       rules:
         - alert: BlockyAbsent
           annotations:
             description: Blocky has disappeared from Prometheus service discovery.
             summary: Blocky is down.
           expr: |
-            absent(up{job=~".*{{ include "j0sh3rs.common.lib.chart.names.fullname" . }}.*"} == 1)
+            absent(up{job=~".*{{ include "bjw-s.common.lib.chart.names.fullname" . }}.*"} == 1)
           for: 5m
           labels:
             severity: critical
@@ -29,7 +29,7 @@ spec:
               Please re-enable protection.
             summary: Blocky is disabled.
           expr: |
-            blocky_blocking_enabled{job=~".*{{ include "j0sh3rs.common.lib.chart.names.fullname" . }}.*"} == 0
+            blocky_blocking_enabled{job=~".*{{ include "bjw-s.common.lib.chart.names.fullname" . }}.*"} == 0
           for: 15m
           labels:
             severity: critical

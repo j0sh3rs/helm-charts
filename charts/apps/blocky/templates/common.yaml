@@ -1,5 +1,5 @@
 {{/* Make sure all variables are set properly */}}
-{{- include "j0sh3rs.common.values.init" . }}
+{{- include "bjw-s.common.values.init" . }}
 
 {{/* Append the hardcoded settings */}}
 {{- define "blocky.hardcodedValues" -}}
@@ -11,9 +11,9 @@ persistence:
     type: "custom"
     volumeSpec:
       configMap:
-        name: {{ printf "%v-config" (include "j0sh3rs.common.lib.chart.names.fullname" .) }}
+        name: {{ printf "%v-config" (include "bjw-s.common.lib.chart.names.fullname" .) }}
 {{- end -}}
 {{- $_ := mergeOverwrite .Values (include "blocky.hardcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "j0sh3rs.common.loader.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

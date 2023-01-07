@@ -23,7 +23,7 @@ This chart creates a daemonset on a [Kubernetes](http://kubernetes.io) cluster u
 To install the chart with the release name `my-release`:
 
 ```bash
-helm install --name my-release j0sh3rs/cadvisor
+helm install --name my-release bjw-s/cadvisor
 ```
 
 The command deploys cAdvisor on the Kubernetes cluster using the default configuration. The [configuration](#configuration) section lists the parameters that can be configured during installation.
