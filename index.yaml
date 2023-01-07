@@ -15,7 +15,7 @@ entries:
         - kind: added
           description: Allow setting `ttlSecondsAfterFinished` for CronJobs
     apiVersion: v2
-    created: "2023-01-07T17:50:04.10574903Z"
+    created: "2023-01-07T17:53:14.741957491Z"
     description: Function library for Helm charts
     digest: 6c4b062b97cc6e4e18fc9821a63650c2af193c5b240a5e7e3cddfaaeab74d5ca
     home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
@@ -31,4 +31,4 @@ entries:
     urls:
     - https://j0sh3rs.github.io/helm-charts/library/common-1.2.1.tgz
     version: 1.2.1
-generated: "2023-01-07T17:50:04.103033689Z"
+generated: "2023-01-07T17:53:14.738663244Z"
