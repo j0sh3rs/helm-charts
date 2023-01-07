@@ -15,7 +15,7 @@ image:
   tag:
 
 strategy:
-  type: Recreate
+  type: RollingUpdate
 
 # -- environment variables. See [image docs](https://github.com/dani-garcia/vaultwarden/blob/main/.env.template) for more details.
 # @default -- See below
