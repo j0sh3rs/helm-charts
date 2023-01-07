@@ -21,3 +21,7 @@ dependencies:
   - name: common
     repository: https://j0sh3rs.github.io/helm-charts/
     version: 1.2.1
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: Initial Deployment of new chart version
