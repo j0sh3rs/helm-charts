@@ -1,5 +1,92 @@
 apiVersion: v1
 entries:
+  alertmanager-discord:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial Deployment of new chart version
+    apiVersion: v2
+    appVersion: 1.0.4
+    created: "2023-01-07T17:54:47.889503429Z"
+    dependencies:
+    - name: common
+      repository: https://j0sh3rs.github.io/helm-charts/
+      version: 1.2.1
+    description: Webhook for Prometheus Alertmanager to listen for notifications and
+      pushes them to Discord channel
+    digest: 69aac1c4130f62119185eec190a779d7a20a39ca25013b2827a6b0e21192d750
+    home: https://github.com/j0sh3rs/charts/tree/master/charts/library/alertmanager-discord
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - alertmanager
+    - discord
+    - alerting
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: j0sh3rs@pm.me
+      name: j0sh3rs
+    name: alertmanager-discord
+    sources:
+    - https://github.com/rogerrum/alertmanager-discord
+    - https://hub.docker.com/r/rogerrum/alertmanager-discord
+    urls:
+    - https://j0sh3rs.github.io/helm-charts/apps/alertmanager-discord-1.0.0.tgz
+    version: 1.0.0
+  blocky:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial Deployment of new chart version
+    apiVersion: v2
+    appVersion: v0.20
+    created: "2023-01-07T17:54:47.894631617Z"
+    dependencies:
+    - name: common
+      repository: https://j0sh3rs.github.io/helm-charts
+      version: 1.2.1
+    description: DNS proxy as ad-blocker for local network
+    digest: d524bc28550ffa7468acc28abd8c404df5ff572ab76be7851f14a38bd854e2b9
+    home: https://github.com/j0sh3rs/charts/tree/master/charts/library/blocky
+    icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
+    keywords:
+    - blocky
+    - adblock
+    - dns
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: j0sh3rs@pm.me
+      name: j0sh3rs
+    name: blocky
+    sources:
+    - https://github.com/0xERR0R/blocky
+    urls:
+    - https://j0sh3rs.github.io/helm-charts/apps/blocky-1.0.0.tgz
+    version: 1.0.0
+  cadvisor:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial Deployment of new chart version
+    apiVersion: v1
+    appVersion: 0.46.0
+    created: "2023-01-07T17:54:47.895225327Z"
+    description: A chart for a Cadvisor deployment
+    digest: 28fa4c7728420c2578eb8321acb74790a962cc2c0e5a20bd0b248964a7be010d
+    home: https://github.com/google/cadvisor
+    keywords:
+    - prometheus
+    - cadvisor
+    - monitoring
+    maintainers:
+    - email: j0sh3rs@pm.me
+      name: j0sh3rs
+    name: cadvisor
+    sources:
+    - https://github.com/google/cadvisor
+    - https://github.com/j0sh3rs/helm-charts
+    urls:
+    - https://j0sh3rs.github.io/helm-charts/apps/cadvisor-1.0.0.tgz
+    version: 1.0.0
   common:
   - annotations:
       artifacthub.io/changes: |-
@@ -15,7 +102,7 @@ entries:
         - kind: added
           description: Allow setting `ttlSecondsAfterFinished` for CronJobs
     apiVersion: v2
-    created: "2023-01-07T17:53:14.741957491Z"
+    created: "2023-01-07T17:54:47.90708043Z"
     description: Function library for Helm charts
     digest: 6c4b062b97cc6e4e18fc9821a63650c2af193c5b240a5e7e3cddfaaeab74d5ca
     home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
@@ -31,4 +118,94 @@ entries:
     urls:
     - https://j0sh3rs.github.io/helm-charts/library/common-1.2.1.tgz
     version: 1.2.1
-generated: "2023-01-07T17:53:14.738663244Z"
+  protonmail-bridge:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial Deployment of new chart version
+    apiVersion: v2
+    appVersion: 2.4.8-1
+    created: "2023-01-07T17:54:47.897936873Z"
+    dependencies:
+    - name: common
+      repository: https://j0sh3rs.github.io/helm-charts
+      version: 1.2.1
+    description: Container for protonmail bridge to work on the network for mail forwarding
+    digest: 476aaaa00ef6b448c407ded37334ad4d9fc113c6652ba3450eec7bad070be9fe
+    home: https://github.com/j0sh3rs/charts/tree/master/charts/library/protonmail-bridge
+    icon: https://raw.githubusercontent.com/ProtonMail/proton-bridge/master/icon.iconset/icon_256x256.png
+    keywords:
+    - protonmail
+    - protonmail-bridge
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: j0sh3rs@pm.me
+      name: j0sh3rs
+    name: protonmail-bridge
+    sources:
+    - https://github.com/shenxn/protonmail-bridge-docker
+    - https://hub.docker.com/r/shenxn/protonmail-bridge
+    urls:
+    - https://j0sh3rs.github.io/helm-charts/apps/protonmail-bridge-1.0.0.tgz
+    version: 1.0.0
+  unifi-poller:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial Deployment of new chart version
+    apiVersion: v2
+    appVersion: 2.1.3
+    created: "2023-01-07T17:54:47.900723221Z"
+    dependencies:
+    - name: common
+      repository: https://j0sh3rs.github.io/helm-charts
+      version: 1.2.1
+    description: Collect ALL UniFi Controller, Site, Device & Client Data - Export
+      to InfluxDB or Prometheus
+    digest: fd37f3fc840b600e895aa2d3876774f631090b6ff731ce18fdebcb352eb83069
+    home: https://github.com/j0sh3rs/charts/tree/master/charts/library/unifi-poller
+    icon: https://raw.githubusercontent.com/wiki/unifi-poller/unifi-poller/images/unifi-poller-logo.png
+    keywords:
+    - unifi
+    - unifi-poller
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: j0sh3rs@pm.me
+      name: j0sh3rs
+    name: unifi-poller
+    sources:
+    - https://github.com/unifi-poller/unifi-poller
+    - https://hub.docker.com/r/golift/unifi-poller
+    urls:
+    - https://j0sh3rs.github.io/helm-charts/apps/unifi-poller-1.0.0.tgz
+    version: 1.0.0
+  vaultwarden:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial Deployment of new chart version
+    apiVersion: v2
+    appVersion: 1.27.0
+    created: "2023-01-07T17:54:47.903532169Z"
+    dependencies:
+    - name: common
+      repository: https://j0sh3rs.github.io/helm-charts
+      version: 1.2.1
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: cf5ba55b1a57355f8214dcad4df91be4a1f6ab809e7c679c62217d91169a43aa
+    home: https://github.com/j0sh3rs/charts/tree/master/charts/library/vaultwarden
+    icon: https://sesoodan.sirv.com/bitwarden_rs.png
+    keywords:
+    - Vaultwarden
+    - bitwardenrs
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: j0sh3rs@pm.me
+      name: j0sh3rs
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://j0sh3rs.github.io/helm-charts/apps/vaultwarden-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-01-07T17:54:47.886559679Z"
