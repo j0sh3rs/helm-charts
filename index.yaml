@@ -1,0 +1,34 @@
+apiVersion: v1
+entries:
+  common:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: fixed
+          description: Fixed indentation in cronjob component to allow podAnnotations
+        - kind: fixed
+          description: Cleaned leftover `secret` behavior under `envFrom`.
+          links:
+            - name: GitHub Issue
+              url: https://github.com/bjw-s/helm-charts/issues/94
+        - kind: changed
+          description: Updated code-server image tag to 4.9.1
+        - kind: added
+          description: Allow setting `ttlSecondsAfterFinished` for CronJobs
+    apiVersion: v2
+    created: "2023-01-07T17:48:46.192967552Z"
+    description: Function library for Helm charts
+    digest: 6c4b062b97cc6e4e18fc9821a63650c2af193c5b240a5e7e3cddfaaeab74d5ca
+    home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
+    keywords:
+    - common
+    - library
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: me@bjw-s.dev
+      name: bjw-s
+    name: common
+    type: library
+    urls:
+    - https://j0sh3rs.github.io/helm-charts/library/common-1.2.1.tgz
+    version: 1.2.1
+generated: "2023-01-07T17:48:46.190096927Z"
