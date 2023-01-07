@@ -19,7 +19,7 @@ Kubernetes: `>=1.22.0-0`
 
 This is a [Helm Library Chart](https://helm.sh/docs/topics/library_charts/#helm).
 
-**WARNING: THIS CHART IS NOT MEANT TO BE INSTALLED DIRECTLY**
+## WARNING: THIS CHART IS NOT MEANT TO BE INSTALLED DIRECTLY
 
 ## Using this library
 
