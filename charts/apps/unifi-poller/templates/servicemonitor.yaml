@@ -13,7 +13,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      {{- include "bjw-s.common.lib.metadata.allLabels.selectorLabels" . | nindent 6 }}
+      {{- include "bjw-s.common.lib.metadata.selectorLabels" . | nindent 6 }}
   endpoints:
     - port: metrics
       {{- with .Values.metrics.serviceMonitor.interval }}
