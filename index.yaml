@@ -7,7 +7,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: 1.0.4
-    created: "2023-02-07T19:17:59.430784358Z"
+    created: "2023-02-07T19:19:20.63892385Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts/
@@ -38,7 +38,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: 1.0.4
-    created: "2023-02-07T19:17:59.427714659Z"
+    created: "2023-02-07T19:19:20.635936451Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts/
@@ -70,7 +70,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: v0.20
-    created: "2023-02-07T19:17:59.453377349Z"
+    created: "2023-02-07T19:19:20.655080846Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts
@@ -99,7 +99,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: v0.20
-    created: "2023-02-07T19:17:59.44975955Z"
+    created: "2023-02-07T19:19:20.651350447Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts
@@ -128,7 +128,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: v0.20
-    created: "2023-02-07T19:17:59.446067352Z"
+    created: "2023-02-07T19:19:20.642873449Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts
@@ -155,10 +155,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: added
+          description: Bugfix for annotations
+    apiVersion: v1
+    appVersion: 0.47.0
+    created: "2023-02-07T19:19:20.657545546Z"
+    description: A chart for a Cadvisor deployment
+    digest: 89c2efc14d4a53b17fb53e2f2a32895a9cd2acb19231555d533c15bf82dff7c1
+    home: https://github.com/google/cadvisor
+    keywords:
+    - prometheus
+    - cadvisor
+    - monitoring
+    maintainers:
+    - email: j0sh3rs@pm.me
+      name: j0sh3rs
+    name: cadvisor
+    sources:
+    - https://github.com/google/cadvisor
+    - https://github.com/j0sh3rs/helm-charts
+    urls:
+    - https://j0sh3rs.github.io/helm-charts/apps/cadvisor-1.1.1.tgz
+    version: 1.1.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
           description: Add service annotations for prometheus
     apiVersion: v1
     appVersion: 0.47.0
-    created: "2023-02-07T19:17:59.455414848Z"
+    created: "2023-02-07T19:19:20.656995446Z"
     description: A chart for a Cadvisor deployment
     digest: e99adbdef4ad1aad6052938f222f7d82a049c4bae0d1d0fd08a1c3d8ed68de51
     home: https://github.com/google/cadvisor
@@ -182,7 +206,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v1
     appVersion: 0.46.0
-    created: "2023-02-07T19:17:59.454538349Z"
+    created: "2023-02-07T19:19:20.656452746Z"
     description: A chart for a Cadvisor deployment
     digest: 8cd7609a948ad6c538db2fbe492411a26f902c5bb478c8474be675024fac3512
     home: https://github.com/google/cadvisor
@@ -206,7 +230,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v1
     appVersion: 0.46.0
-    created: "2023-02-07T19:17:59.453968049Z"
+    created: "2023-02-07T19:19:20.655676746Z"
     description: A chart for a Cadvisor deployment
     digest: 28fa4c7728420c2578eb8321acb74790a962cc2c0e5a20bd0b248964a7be010d
     home: https://github.com/google/cadvisor
@@ -239,7 +263,7 @@ entries:
         - kind: added
           description: Allow setting `ttlSecondsAfterFinished` for CronJobs
     apiVersion: v2
-    created: "2023-02-07T19:17:59.481093939Z"
+    created: "2023-02-07T19:19:20.684281239Z"
     description: Function library for Helm charts
     digest: 6c4b062b97cc6e4e18fc9821a63650c2af193c5b240a5e7e3cddfaaeab74d5ca
     home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
@@ -262,7 +286,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: 2.4.8-1
-    created: "2023-02-07T19:17:59.462031346Z"
+    created: "2023-02-07T19:19:20.665548644Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts
@@ -291,7 +315,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: 2.4.8-1
-    created: "2023-02-07T19:17:59.459039847Z"
+    created: "2023-02-07T19:19:20.660456145Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts
@@ -321,7 +345,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: 2.1.3
-    created: "2023-02-07T19:17:59.472445942Z"
+    created: "2023-02-07T19:19:20.674418642Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts
@@ -351,7 +375,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: 2.1.3
-    created: "2023-02-07T19:17:59.468021444Z"
+    created: "2023-02-07T19:19:20.671491142Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts
@@ -381,7 +405,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: 2.1.3
-    created: "2023-02-07T19:17:59.465054245Z"
+    created: "2023-02-07T19:19:20.668553243Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts
@@ -412,7 +436,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: 1.27.0
-    created: "2023-02-07T19:17:59.47852084Z"
+    created: "2023-02-07T19:19:20.68178534Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts
@@ -440,7 +464,7 @@ entries:
           description: Initial Deployment of new chart version
     apiVersion: v2
     appVersion: 1.27.0
-    created: "2023-02-07T19:17:59.475483341Z"
+    created: "2023-02-07T19:19:20.678803441Z"
     dependencies:
     - name: common
       repository: https://j0sh3rs.github.io/helm-charts
@@ -462,4 +486,4 @@ entries:
     urls:
     - https://j0sh3rs.github.io/helm-charts/apps/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2023-02-07T19:17:59.42431206Z"
+generated: "2023-02-07T19:19:20.632373752Z"
